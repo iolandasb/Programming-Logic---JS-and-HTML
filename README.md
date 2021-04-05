@@ -4,13 +4,13 @@ Programming logic exercises with JavaScript and HTML.
 
 # Conceitos e Funcionalidades
 
-•	HTML: Hyper Text Markup Language.
+•	HTML -> Hyper Text Markup Language.
 
-•	TAGS: instruções para o navegador, como <h1>, <a>. Pode ou não ser fechada. Exemplo do que não é TAG: <meta>.
+•	TAGS -> instruções para o navegador, como <h1>, <a>. Pode ou não ser fechada. Exemplo do que não é TAG: <meta>.
 o	De conteúdo: possuem abertura e fechamento. Ex: h, p, etc.
 o	De informação: não possuem fechamento, pois estão apenas passando uma informação. Ex: DOCTYPE, meta charset, etc.
 
-•	Atributo - Exemplo: href.
+•	Atributo - Exemplo -> href.
 
 •	meta sharset=”UTF-8”: comando inicial necessário para evitar problemas de acentuação. UTF-8 é um dos dicionários existentes que é utilizado pela maioria dos idiomas.
 
