@@ -29,31 +29,19 @@ Programming logic exercises with JavaScript and HTML.
   - Funções anônimas: quando os nomes das funções forem excluídos, elas serão anônimas. Funções anônimas não funcionam "soltas", mas podem ser atribuídas a uma variável ou propriedade/comando.
 
   - Função pulalinha: serve para pular linha.
-  * <img>![image](https://user-images.githubusercontent.com/60974082/113637941-1e99aa00-964c-11eb-9d0c-3bdac6721351.png)</img>
+  - <img>![image](https://user-images.githubusercontent.com/60974082/113637941-1e99aa00-964c-11eb-9d0c-3bdac6721351.png)</img>
     
   - Função mostra: foi criada para substituir o que é escrito em document.write. A inserção da palavra "frase" quer dizer que frase = qualquer coisa escrita dentro dos parenteses em mostra(), sendo que esse conteúdo atua como uma variável. Por conta disso, o comando document.write dentro da função mostra deve também conter a palavra "frase", pois ela está recebendo a variável. Ademais, pode ter função dentro de função, como foi feito aqui ao se adicionar a função pulaLinha.
-  - 
-	<img>
-	![image](https://user-images.githubusercontent.com/60974082/113637987-3a9d4b80-964c-11eb-9276-fc5459eef795.png)
-	</img>
+  - <img>![image](https://user-images.githubusercontent.com/60974082/113637987-3a9d4b80-964c-11eb-9276-fc5459eef795.png)</img>
 
   - Função sorteia é para sortear um número aleatório.
-  - 
-	<img>
-	![image](https://user-images.githubusercontent.com/60974082/113638089-6ddfda80-964c-11eb-9b38-d298ff853f44.png)
-	</img>
+  - <img>![image](https://user-images.githubusercontent.com/60974082/113638089-6ddfda80-964c-11eb-9b38-d298ff853f44.png)</img>
 	
   - Função sorteiaNumeros é para devolver uma lista de segredos (no caso, números). O parâmetro dentro dela indica quantos segredos ela recebe (os quais não se repetem).
-  - 
-	<img>
-	![image](https://user-images.githubusercontent.com/60974082/113638198-af708580-964c-11eb-938d-7ab8223a7827.png)
-	</img>
+  - <img>![image](https://user-images.githubusercontent.com/60974082/113638198-af708580-964c-11eb-938d-7ab8223a7827.png)</img>
 
   - Função isNAN(): determina se o valor é NaN ou não.
-  - 
-	<img>
-	![image](https://user-images.githubusercontent.com/60974082/113638260-d16a0800-964c-11eb-8e9c-826585742fc4.png)
-	</img>
+  - <img>![image](https://user-images.githubusercontent.com/60974082/113638260-d16a0800-964c-11eb-8e9c-826585742fc4.png)</img>
 
 • return: indica o que sairá da função. Ainda assim, sem a declaração mostra ele não será imprintado na tela, por isso essa declaração é importante. Antes, as funções apareciam porque a declaração mostra estava dentro da função. Sem ela dentro, é necessário que haja o return.
 
@@ -109,10 +97,7 @@ Programming logic exercises with JavaScript and HTML.
 • "canvas width="600" height="400"": comando para desenhar algo na tela (fica fora do JS). O width e heigh podem variar de acordo com o comando que for mais eficiente.
 
 • Canvas: delimitação de onde se desenhará. Código padrão:
-
-  - 	<img>
-	![image](https://user-images.githubusercontent.com/60974082/113638434-37568f80-964d-11eb-8094-a386b996028f.png)
-	</img>
+- <img>![image](https://user-images.githubusercontent.com/60974082/113638434-37568f80-964d-11eb-8094-a386b996028f.png)</img>
 	
 • tela.getContext('2d'): comando importante para 
 
