@@ -6,7 +6,7 @@ Programming logic exercises with JavaScript and HTML.
 
 •	HTML: Hyper Text Markup Language.
 
-•	TAGS: instruções para o navegador, como <h1>, <a>. Pode ou não ser fechada. Exemplo do que não é TAG: <meta>.
+•	TAGS: instruções para o navegador, como "h1", "a". Pode ou não ser fechada. Exemplo do que não é TAG: <meta>.
   - De conteúdo: possuem abertura e fechamento. Ex: h, p, etc.
   - De informação: não possuem fechamento, pois estão apenas passando uma informação. Ex: DOCTYPE, meta charset, etc.
 
