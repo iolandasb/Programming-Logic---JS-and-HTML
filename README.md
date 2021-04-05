@@ -4,31 +4,32 @@ Programming logic exercises with JavaScript and HTML.
 
 # Conceitos e Funcionalidades
 
-•	HTML: Hyper Text Markup Language.
+• HTML: Hyper Text Markup Language.
 
-•	TAGS: instruções para o navegador, como "h1", "a". Pode ou não ser fechada. Exemplo do que não é TAG: <meta>.
+• TAGS: instruções para o navegador, como "h1", "a". Pode ou não ser fechada. Exemplo do que não é TAG: <meta>.
   - De conteúdo: possuem abertura e fechamento. Ex: h, p, etc.
   - De informação: não possuem fechamento, pois estão apenas passando uma informação. Ex: DOCTYPE, meta charset, etc.
 
-•	Atributo - Exemplo: href.
+• Atributo - Exemplo: href.
 
-•	meta sharset=”UTF-8”: comando inicial necessário para evitar problemas de acentuação. UTF-8 é um dos dicionários existentes que é utilizado pela maioria dos idiomas.
+• meta sharset=”UTF-8”: comando inicial necessário para evitar problemas de acentuação. UTF-8 é um dos dicionários existentes que é utilizado pela maioria dos idiomas.
 
-•	var: variável. Para que ela seja aplicável em todas as funções, é necessário que conste fora destas.
+• var: variável. Para que ela seja aplicável em todas as funções, é necessário que conste fora destas.
 
-•	Math.round: serve para arredondar o valor para cima.
+• Math.round: serve para arredondar o valor para cima.
 
-•	Math.floor: serve para arredondar o valor para baixo.
+• Math.floor: serve para arredondar o valor para baixo.
 
-•	Math.random = calcula um número aleatório.
+• Math.random = calcula um número aleatório.
 
-•	Math.PI: calcula o PI.
+• Math.PI: calcula o PI.
 
-•	Funções: devem sempre ser declaradas inicialmente (e variáveis também). Quando uma função é chamada com o (), significa que ela deve ser executada. Quando ela é chamada sem o (), significa que ela está sendo atribuída como parâmetro a outro comando.
+• Funções: devem sempre ser declaradas inicialmente (e variáveis também). Quando uma função é chamada com o (), significa que ela deve ser executada. Quando ela é chamada sem o (), significa que ela está sendo atribuída como parâmetro a outro comando.
 
-•	Funções anônimas: quando os nomes das funções forem excluídos, elas serão anônimas. Funções anônimas não funcionam "soltas", mas podem ser atribuídas a uma variável ou propriedade/comando.
+  - Funções anônimas: quando os nomes das funções forem excluídos, elas serão anônimas. Funções anônimas não funcionam "soltas", mas podem ser atribuídas a uma variável ou propriedade/comando.
 
   - Função pulalinha: serve para pular linha.
+  - 
     	<img>
     	![image](https://user-images.githubusercontent.com/60974082/113637941-1e99aa00-964c-11eb-9d0c-3bdac6721351.png)
     	</img>
