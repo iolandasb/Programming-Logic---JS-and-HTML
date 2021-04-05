@@ -28,16 +28,15 @@ Programming logic exercises with JavaScript and HTML.
 
 •	Funções anônimas: quando os nomes das funções forem excluídos, elas serão anônimas. Funções anônimas não funcionam "soltas", mas podem ser atribuídas a uma variável ou propriedade/comando.
 
-o	Função pulalinha: serve para pular linha.
-•	function pulaLinha() { 
-•	        document.write("<br><br>");
-•	    }
-
-o	Função mostra: foi criada para substituir o que é escrito em document.write. A inserção da palavra "frase" quer dizer que frase = qualquer coisa escrita dentro dos parenteses em mostra(), sendo que esse conteúdo atua como uma variável. Por conta disso, o comando document.write dentro da função mostra deve também conter a palavra "frase", pois ela está recebendo a variável. Ademais, pode ter função dentro de função, como foi feito aqui ao se adicionar a função pulaLinha.
-•	function mostra(frase) {
-•	    document.write(frase);
-•	    pulaLinha();
-•	}
+  - Função pulalinha: serve para pular linha.
+    <img>
+    ![image](https://user-images.githubusercontent.com/60974082/113637829-e98d5780-964b-11eb-97fc-1d72abe65c6e.png)
+    </img>
+  - Função mostra: foi criada para substituir o que é escrito em document.write. A inserção da palavra "frase" quer dizer que frase = qualquer coisa escrita dentro dos parenteses em mostra(), sendo que esse conteúdo atua como uma variável. Por conta disso, o comando document.write dentro da função mostra deve também conter a palavra "frase", pois ela está recebendo a variável. Ademais, pode ter função dentro de função, como foi feito aqui ao se adicionar a função pulaLinha.
+	    function mostra(frase) {
+	    document.write(frase);
+	    pulaLinha();
+      }
 
 o	Função sorteia é para sortear um número aleatório.
 •	function sorteia() {
