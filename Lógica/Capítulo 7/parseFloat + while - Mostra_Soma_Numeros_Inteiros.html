@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    let numero = 1;
+    let totalNumerosNaoInteiros = 0;
+
+    while(numero <= 2) {
+    let numeroNaoInteiro = parseFloat(prompt("Informe um número não inteiro."));
+    totalNumerosNaoInteiros = totalNumerosNaoInteiros + numeroNaoInteiro;
+    numero++;
+    }
+
+    mostra("O total é " + totalNumerosNaoInteiros + ".");
+    mostra("FIM.");
+    
+ </script>

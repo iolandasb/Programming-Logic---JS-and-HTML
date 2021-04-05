@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    let numeroPensado = Math.round(Math.random() * 10);
+    console.log(numeroPensado);
+    let tentativas = 1;
+    
+    while(tentativas <= 3) {
+        let chute = parseInt(prompt("Chute um número."));
+        if(chute == numeroPensado) {
+        mostra("Você acertou! O número pensado foi " + numeroPensado + ".");
+        break;
+        } else {
+        mostra("Você errou!");
+        }
+        tentativas++
+        }
+
+    // O break serve para "quebrar" o looping.
+    
+ </script>

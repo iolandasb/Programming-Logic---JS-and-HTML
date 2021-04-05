@@ -1,0 +1,32 @@
+<script>
+
+var pularLinha = "<br><br>" 
+    document.write("Teste" + pularLinha + "Ok" + pularLinha)
+    // Teste para mostrar que é possível criar variável para pular linha
+
+function pulaLinha() { 
+        document.write("<br><br>");
+    }
+    // Essa é a declaração da função pulaLinha, que serve para pular linha
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+// A função mostra foi criada para substituir o que é escrito em document.write. A inserção da palavra "frase" quer dizer que frase = qualquer coisa escrita dentro dos parenteses em mostra(), sendo que esse conteúdo haje como uma variável. Por conta disso, o comando document.write dentro da função mostra deve também conter a palavra "frase", pois ela está recebendo a variável. Ademais, pode ter função dentro de função, como foi feito aqui ao se adicionar a função pulaLinha.
+
+function exibeAlerta(mensagem) {
+    alert("***" + mensagem + "***");
+}
+// Essa função é apenas para mostrar alguns alertas.
+
+var ano = 2020; 
+
+// As funções devem sempre ser declaradas inicialmente (e variáveis também).
+
+    exibeAlerta("Olá");
+
+    mostra("Iolanda tem " + (ano - 1989) + " anos.");
+    mostra("Rafael tem " + (ano - 1989) + " anos.");
+
+</script>

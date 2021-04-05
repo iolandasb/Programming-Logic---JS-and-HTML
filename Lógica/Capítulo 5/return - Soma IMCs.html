@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+        return peso / (altura*altura);
+    }
+
+    var totalImc = calculaImc(1.75, 95) + calculaImc(1.82, 90);
+
+    mostra("A soma dos IMCs é " + Math.round(totalImc));
+    
+    // Como a função só tem o cálculo que constava em var no arquivo "imc_3", o var pode ser susbtituído por return, pois é o cálculo que vai ser devolvido.
+    // Aqui a variável foi reduzida para gerar o valor total, mas isso não significa que ela é a melhor. No arquivo imc_4_return é mais legível a aplicação das variáveis, uma vez que essas variáveis são auxiliares.
+
+</script>

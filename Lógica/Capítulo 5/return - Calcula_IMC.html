@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+        var imc = peso / (altura*altura);
+        return imc;
+    }
+
+    var imcIolanda = calculaImc(1.75, 95);
+    var imcRafael = calculaImc(1.82, 90);
+
+    mostra("O IMC da Iolanda é " + Math.round(imcIolanda));
+    mostra("O IMC do Rafael é " + Math.round(imcRafael));
+    
+    // O comanado return indica o que sairá da função. Ainda assim, sem a declaração mostra ele não será imprintado na tela, por isso essa declaração é importante. Antes, as funções apareciam porque a declaração mostra estava dentro da função. Sem ela dentro, é necessário que haja o return.
+
+</script>

@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    let nome = prompt("Qual o seu nome?")
+    let vitorias = parseInt(prompt(nome + ", entre com o número de vitórias."));
+    let empates = parseInt(prompt(nome + ", entre com o número de empates."));
+    let pontos = (vitorias*3) + empates;
+    
+        mostra(nome + ", os pontos do seu time é " + pontos + ".");
+
+    if(pontos > 28) {
+        mostra("Seu time está melhor que no ano passado.");
+    }
+        
+    if(pontos < 28) {
+        mostra("Seu time está pior que no ano passado.");
+    }
+
+    if(pontos == 28) {
+        mostra("Seu time está igual ano passado.");
+    }
+
+        mostra("FIM.");
+
+    // Partiu-se da premissa de que 1 vitória = 3 pontos e 1 empate = 1 ponto.
+    // O comando prompt sempre lê o que é inserido como texto.
+    // O comando parseInt identifica um número classificado como texto e o transforma em número.
+    // Geralmente o = é para atribuir algo. Quando se quer realmente dar o sentido de igual, se usa ==.
+    // let é o novo var. Não foi ensinado isso em aula, André que informou.
+
+</script>
