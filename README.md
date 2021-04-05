@@ -1,2 +1,2 @@
-# Programming-Logic---JS-and-HTML
+# Programming-Logic
 Programming logic exercises with JavaScript and HTML.
