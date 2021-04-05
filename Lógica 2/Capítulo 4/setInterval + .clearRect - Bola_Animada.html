@@ -1,0 +1,42 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCiruculo(x, y, raio) {
+        pincel.fillStyle = 'blue';
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI); //Math.PI = 3.14
+        pincel.fill();
+    }
+
+    function limpaTela() {
+        pincel.clearRect(0, 0, 600, 400);
+    }
+
+    var x = 20;
+    var sentido = 1;
+
+    function atualizaTela() {
+        limpaTela();
+        if(x > 600) {
+            sentido = -1;
+        } else if(x < 0 ) {
+            sentido = 1;
+        }
+        desenhaCiruculo(x, 20, 10);
+        x = x + sentido;
+    }
+        
+    setInterval(atualizaTela, 10);
+    
+// pincel.clearRect serve para limpar o retângulo.
+// setInterval serve para determinar a cada quanto tempo (em milisegundos) uma função é executada, por isso ela comporta o nome da função e o tempo.
+// a variável x tem de ficar fora da função para que o seu valor "acumule", caso ela estivesse dentro seria sempre 20, e não criar o movimento, que depende do acrescimmo de valor na variável.
+// Uma função só é chamada quando se usa o (). Se esse elemento não é indicado, a função está apenas constando como parâmetro, que é o caso do comando setInterval. Esse comando que chama a função, não eu.
+
+</script>
