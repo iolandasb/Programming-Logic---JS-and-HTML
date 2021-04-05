@@ -1,0 +1,70 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+
+<script>
+
+    function sorteia() {
+        return Math.round(Math.random() * 10);
+    }
+
+    function sorteiaNumeros(quantidade) {
+
+        var segredosX = []; // Variáveis declaradas dentro de uma função só existem naquela função.
+        var numero = 1; // Trata-se de um contador, onde começa.
+        
+        while (numero <= quantidade) {
+            var numeroAleatorio = sorteia(); // numeroAleatorio é o número escolhido.
+            var achou = false;
+
+            if(numeroAleatorio !== 0) { // Esse if é apenas para tirar a possibilidade de o número lançado aleatóriamente ser 0.
+            
+                for(var posicao = 0; posicao < segredosX.length; posicao++) { // O for faz a busca na lista (array), que é representado pela aqui função sorteia() e verifica se o número escolhido através da variável numeroAleatorio se encontra dentro dessa lista. Em caso positivo, achou vai ser igual a true, e o looping será interrompido.
+                    if(segredosX[posicao] == numeroAleatorio) {
+                    achou = true;
+                    break;
+                    }
+                }
+                    if(achou == false) {
+                    segredosX.push(numeroAleatorio); // Coloca um novo segredo dentro da lista (o array). Considerando a condicional acima, ele só vai colocar o elemento aqui, se não achar o número escolhido.
+                    numero++; // o numero++ é para dar o looping, caso o número escolhido não seja o gerado pelo sistema e seja necessário tentar novamente.
+                    }
+            }
+        }         
+            return segredosX;
+        }
+        
+    var segredos = sorteiaNumeros(3); // Aqui se determinou que a função sorteiaNumeros sorteie 3 números.
+    console.log(segredos);
+
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica() {
+        var achou = false; // Serve para a não repetição de números.
+        for(var posicao = 0; posicao < segredos.length; posicao++) {
+        if(input.value == segredos[posicao]) {
+            alert("Você acertou!");
+            achou = true; 
+            break;
+            }
+        }
+        if(achou == false) {
+            alert ("Você errou!");
+        }
+        input.value = "";
+        input.focus();
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+    // .push "empurra" algo para dentro do array (só serve para array).
+    // A função sorteia é para sortear um número aleatório.
+    // A função sorteiaNumeros é para devolver uma lista de segredos (no caso, números). O parâmetro dentro dela indica quantos segredos ela recebe (os quais não se repetem).
+    // !== significa DIFERENTE.
+
+
+ </script>

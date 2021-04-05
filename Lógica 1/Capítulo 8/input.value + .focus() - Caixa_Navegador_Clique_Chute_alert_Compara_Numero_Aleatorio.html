@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<input/>
+
+<button>Compare com o meu segredo</button>
+
+
+<script>
+
+    var segredo = Math.round(Math.random() * 10);
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica() {
+        if(input.value == segredo) {
+            alert("Você acertou!");
+        } else {
+            alert("Você errou!");
+        }
+        input.value = "";
+        input.focus();
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+
+    // No exemplo acima o nome da variável pode ser outro, mas dentro de document.querySelector tem de constar o comando em HTML que se quer indicar, no caso "input".
+    // O document.querySelector() serve para trazer o comando do mundo HTML para o JS.
+    // A função verifica na última linha (button.onclick = verifica) não tem parenteses porque esta é a forma de ligá-la ao onclick. Se mantivermos o parenteses ela entende que deve ser executada de forma manual e não vai funcionar. Então aqui é necessário que seja sem parenteses, pois é o que atribui a função ao comenando onclick.
+    // O input.value chama a tag input a mostrar seu valor.
+    // "input.value = "";" serve para limpar a caixa de texto que aparece no navegador após você colocar um valor e apertar o botão.
+    // "button.onclick = verifica" serve para após você colocar um valor na caixa de texto do navegador e apertar o botão, a caixa de texto voltar a ser selecionada (e piscar), não sendo necessário clicar nela novamente para digitar um novo texto/número. Ele consta no começo e depois na função pois quisemos que isso acontecesse tanto ao recarregar a página quanto ao apertar o botão.
+
+ </script>

@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    let numeroPensado = 5;
+    let chute = parseInt(prompt("Chute um número."));
+    
+    if(chute == numeroPensado) {
+        mostra("Você acertou!");
+    } else {
+        mostra("Você errou! O número pensado foi " + numeroPensado + ".");
+    }
+
+// != significa diferente.
+
+ </script>
