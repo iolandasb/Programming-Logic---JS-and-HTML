@@ -29,10 +29,7 @@ Programming logic exercises with JavaScript and HTML.
   - Funções anônimas: quando os nomes das funções forem excluídos, elas serão anônimas. Funções anônimas não funcionam "soltas", mas podem ser atribuídas a uma variável ou propriedade/comando.
 
   - Função pulalinha: serve para pular linha.
-  - 
-    	<img>
-    	![image](https://user-images.githubusercontent.com/60974082/113637941-1e99aa00-964c-11eb-9d0c-3bdac6721351.png)
-    	</img>
+  - <img>![image](https://user-images.githubusercontent.com/60974082/113637941-1e99aa00-964c-11eb-9d0c-3bdac6721351.png)</img>
     
   - Função mostra: foi criada para substituir o que é escrito em document.write. A inserção da palavra "frase" quer dizer que frase = qualquer coisa escrita dentro dos parenteses em mostra(), sendo que esse conteúdo atua como uma variável. Por conta disso, o comando document.write dentro da função mostra deve também conter a palavra "frase", pois ela está recebendo a variável. Ademais, pode ter função dentro de função, como foi feito aqui ao se adicionar a função pulaLinha.
   - 
